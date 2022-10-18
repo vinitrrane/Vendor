@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/4dce9aeb40.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="home.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header header-dark sticky">
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+                    <a class="navbar-brand order-1 order-lg-2 " href="home.html"><img src="img/logo.svg" alt=""></a>
+                    <button class="navbar-toggler order-2 border " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse order-3 order-lg-1" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-lg-5 me-auto mb-2 mb-lg-0 ">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="product.html">Products</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="faq.html">
+                                    FAQ
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <div class="collapse navbar-collapse order-4 order-lg-3" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto me-lg-5 mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="profile.html">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass" type="button"
+                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                                        aria-controls="offcanvasTop"></i></a>
+                            </li>
+                            <li class="nav-item cart">
+                                <a class="nav-link" href="#" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                    <span class="  ">Cart</span>
+                                    <span class=" ">2</span>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-top search" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-body d-flex justify-content-center align-items-center search">
+                <input type="text" class="form-control" placeholder="Type your search here">
+                <button type="button" class="btn-close text-reset p-3" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-end p-4" tabindex="-1" id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel">Cart</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="row g-3">
+                    <div class="col-12">
+                        <div class="cart-item">
+                            <div class="row align-items-center">
+                                <div class="col-9">
+                                    <div class="media d-flex align-items-center">
+                                        <a href="#"><img src="img/product-3.jpg" alt="" class="img-fluid"></a>
+                                        <div class="media-body">
+                                            <h5 class="media-title">Black IC Pendant Light</h5>
+                                            <p class="media-subtitle">Black, Steel</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2 text-center">
+                                    <div class="cart-item-price d-flex align-items-center">
+                                        <p>$90</p>
+                                    </div>
+                                </div>
+                                <div class="col-1  p-1 d-flex align-items-center">
+                                    <div class="cart-close-icon ">
+                                        <button type="button" class="btn-close cart-item-close "
+                                            aria-label="Close"></button>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 ">
+                        <div class="cart-item">
+                            <div class="row align-items-center justify-content-evenly">
+                                <div class="col-9">
+                                    <div class="media d-flex align-items-center ">
+                                        <a href="#"><img src="img/product-4.jpg" alt="" class="img-fluid"></a>
+                                        <div class="media-body">
+                                            <h5 class="media-title">Red Analog Magazine Rack</h5>
+                                            <p class="media-subtitle">Red</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2 text-center">
+                                    <div class="cart-item-price d-flex align-items-center">
+                                        <p>$120</p>
+                                    </div>
+                                </div>
+                                <div class="col-1  p-1 d-flex align-items-center">
+                                    <div class="cart-close-icon ">
+                                        <button type="button" class="btn-close cart-item-close "
+                                            aria-label="Close"></button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 ">
+                        <div class="cart-item">
+                            <div class="row align-items-center">
+                                <div class="col-9">
+                                    <div class="media d-flex align-items-center ">
+                                        <a href="#"><img src="img/product-24.jpg" alt="" class="img-fluid"></a>
+                                        <div class="media-body">
+                                            <h5 class="media-title">Closca Helmet</h5>
+                                            <p class="media-subtitle">Black</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2 text-center ">
+                                    <div class="cart-item-price d-flex align-items-center ">
+                                        <p>$132</p>
+                                    </div>
+                                </div>
+                                <div class="col-1 p-1 d-flex align-items-center">
+                                    <div class="cart-close-icon d-flex align-items-center ">
+                                        <button type="button" class="btn-close cart-item-close "
+                                            aria-label="Close"></button>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas-footer">
+                <div class="container-fluid">
+                    <div class="row g-0">
+                        <div class="col d-none d-md-block">
+                            <a href="#" class="btn btn-lg btn-block btn-primary">View Cart</a>
+                        </div>
+                        <div class="col ">
+                            <a href="#" class="btn btn-lg btn-block btn-secondary">Checkout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Carousel Section -->
+    <section class="carousel-main p-0">
+        <div class="container-fluid p-0">
+            <div id="carouselExampleCaptions" class="carousel slide slide-main carousel-fade" data-bs-ride="carousel">
+
+                <div class="carousel-inner slide-inner">
+                    <div class="carousel-item slide-item active">
+                        <div class="slide-img bg-image"
+                            style="background: linear-gradient(rgba(0, 0, 0,0.396), rgba(0, 0, 0, 0.396)), url(img/background-1.jpg)">
+
+                        </div>
+
+
+                        <div class="carousel-text slide-text w-50 ">
+                            <h1>Fashion Week <b>Lookbook '19</b>
+                            </h1>
+                            <a href="#" class="btn btn-md btn-white btn-action">Buy Now</a>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item slide-item">
+                        <div class="slide-img"
+                            style="background:linear-gradient(rgba(0, 0, 0,0.396), rgba(0, 0, 0, 0.396)), url(img/background-2.jpg);">
+
+                        </div>
+                        <div class="carousel-text slide-text w-50">
+                            <h1>Brand New <b>Sunglasses</b></h1>
+                            <a href="#" class="btn btn-md btn-white btn-action">Buy Now</a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="carousel-button slide-button d-flex">
+                    <div class="slide-left  d-flex align-items-center justify-content-center me-1">
+                        <a class="btn" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </a>
+                    </div>
+                    <div class="slide-right d-flex align-items-center justify-content-center ms-1">
+                        <a class="btn" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Product NavTabs Section -->
+    <section class="products-section">
+        <div class="container px-lg-5 px-3">
+            <div class="row g-1 align-items-end products-heading text-center text-md-start">
+                <div class="col-md-6 text-center">
+                    <h2>Featured Products</h2>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center justify-content-lg-end">
+                    <div class="nav nav-pills text-start rounded-0" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+                        <button class="nav-link active text-start" id="v-pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#best" type="button" role="tab" aria-controls="v-pills-profile"
+                            aria-selected="true">Best Seller</button>
+                        <button class="nav-link text-start" id="v-pills-order-tab" data-bs-toggle="pill"
+                            data-bs-target="#new" type="button" role="tab" aria-controls="v-pills-order"
+                            aria-selected="false">New Arrival</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="best" role="tabpanel" aria-labelledby="best-tab">
+                            <div class="row g-3 g-md-4">
+                                <div class="col-lg-4 col-6">
+                                    <div class="products">
+                                        <a href="#" class="products-image">
+                                            <img src="img/product-15.jpg" alt="" class="img1 img-fluid">
+                                            <img src="img/product-15-2.jpg" alt="" class="img2 img-fluid">
+                                        </a>
+                                        <div class="product-meta">
+                                            <h3 class="product-title"><a href="#">Original Wool Herringbone
+                                                    Overshirt</a>
+                                            </h3>
+                                            <div class="product-price">
+                                                <span>$183</span>
+                                                <span class="product-action"><a href="#">Add to cart</a></span>
+                                            </div>
+                                            <a href="#" class="product-like"><i class="fa-solid fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="products">
+                                        <a href="#" class="products-image">
+                                            <img src="img/product-16.jpg" alt="" class="img-fluid">
+                                            <img src="img/product-16-2.jpg" alt="" class="img2 img-fluid">
+                                        </a>
+                                        <div class="product-meta">
+                                            <h3 class="product-title"><a href="#">Black Chadwick Sandals</a>
+                                            </h3>
+
+                                            <div class="product-price">
+                                                <span>$176</span>
+                                                <span class="product-action"><a href="#">Add to cart</a></span>
+                                            </div>
+                                            <a href="#" class="product-like"><i class="fa-solid fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="products">
+                                        <a href="#" class="products-image">
+                                            <img src="img/product-17.jpg" alt="" class="img-fluid">
+                                            <img src="img/product-17-2.jpg" alt="" class="img2 img-fluid">
+                                        </a>
+                                        <div class="product-meta">
+                                            <h3 class="product-title"><a href="#">Navy Lind Wax Sweatshirt</a>
+                                            </h3>
+
+                                            <div class="product-price">
+                                                <span>$101</span>
+                                                <span class="product-action"><a href="#">Add to cart</a></span>
+                                            </div>
+                                            <a href="#" class="product-like"><i class="fa-solid fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6">
+                                    <div class="products">
+                                        <a href="#" class="products-image">
+                                            <img src="img/product-18.jpg" alt="" class="img-fluid">
+                                            <img src="img/product-18-2.jpg" alt="" class="img2 img-fluid">
+                                        </a>
+                                        <div class="product-meta">
+                                            <h3 class="product-title"><a href="#">Black Karlo Backpack</a>
+                                            </h3>
+
+                                            <div class="product-price">
+                                                <span>$88</span>
+                                                <span class="product-action"><a href="#">Add to cart</a></span>
+                                            </div>
+                                            <a href="#" class="product-like"><i class="fa-solid fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6">
+                                    <div class="products">
+                                        <a href="#" class="products-image">
+                                            <img src="img/product-19.jpg" alt="" class="img-fluid">
+                                            <img src="img/product-19-2.jpg" alt="" class="img2 img-fluid">
+                                        </a>
+                                        <div class="product-meta">
+                                            <h3 class="product-title"><a href="#">Light Marl Grey Davis Polo</a>
+                                            </h3>
+
+                                            <div class="product-price">
+                                                <span>$107</span>
+                                                <span class="product-action"><a href="#">Add to cart</a></span>
+                                            </div>
+                                            <a href="#" class="product-like"><i class="fa-solid fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6">
+                                    <div class="products">
+                                        <a href="#" class="products-image">
+                                            <img src="img/product-20.jpg" alt="" class="img-fluid">
+                                            <img src="img/product-20-2.jpg" alt="" class="img2 img-fluid">
+                                        </a>
+                                        <div class="product-meta">
+                                            <h3 class="product-title"><a href="#">Green Organic Cotton Hoodie</a>
+                                            </h3>
+
+                                            <div class="product-price">
+                                                <span>$95</span>
+                                                <span class="product-action"><a href="#">Add to cart</a></span>
+                                            </div>
+                                            <a href="#" class="product-like"><i class="fa-solid fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6">
+                                    <div class="products">
+                                        <a href="#" class="products-image">
+                                            <img src="img/product-21.jpg" alt="" class="img-fluid">
+                                            <img src="img/product-21-2.jpg" alt="" class="img2 img-fluid">
+                                        </a>
+                                        <div class="product-meta">
+                                            <h3 class="product-title"><a href="#">Peach Low Curve Iceman Trimix
+                                                    Sneakers</a>
+                                            </h3>
+
+                                            <div class="product-price">
+                                                <span>$183</span>
+                                                <span class="product-action"><a href="#">Add to cart</a></span>
+                                            </div>
+                                            <a href="#" class="product-like"><i class="fa-solid fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="new" role="tabpanel" aria-labelledby="new-tab">
+                            <div class="row g-3 g-md-4">
+                                <div class="col-lg-4 col-6">
+                                    <div class="products">
+                                        <a href="#" class="products-image">
+                                            <img src="img/product-6.jpg" alt="" class="img1 img-fluid">
+                                            <img src="img/product-6-2.jpg" alt="" class="img2 img-fluid">
+                                        </a>
+                                        <div class="product-meta">
+                                            <h3 class="product-title"><a href="#">Grey Pendant Bell Lamp</a>
+                                            </h3>
+                                            <div class="product-price">
+                                                <span>$258</span>
+                                                <span class="product-action"><a href="#">Add To Cart</a></span>
+                                            </div>
+                                            <a href="#" class="product-like"><i class="fa-solid fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="products">
+                                        <a href="#" class="products-image">
+                                            <img src="img/product-3.jpg" alt="" class="img-fluid">
+                                            <img src="img/product-3-2.jpg" alt="" class="img2 img-fluid">
+                                        </a>
+                                        <div class="product-meta">
+                                            <h3 class="product-title"><a href="#">Black IC Pendant Light</a>
+                                            </h3>
+
+                                            <div class="product-price">
+                                                <span>$410</span>
+                                                <span class="product-action"><a href="#">Add To Cart</a></span>
+                                            </div>
+                                            <a href="#" class="product-like"><i class="fa-solid fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="products">
+                                        <a href="#" class="products-image">
+                                            <img src="img/product-4.jpg" alt="" class="img-fluid">
+                                            <img src="img/product-4-2.jpg" alt="" class="img2 img-fluid">
+                                        </a>
+                                        <div class="product-meta">
+                                            <h3 class="product-title"><a href="#">Red Analog Magazine Rack</a>
+                                            </h3>
+
+                                            <div class="product-price">
+                                                <span>$120</span>
+                                                <span class="product-action"><a href="#">Add To Cart</a></span>
+                                            </div>
+                                            <a href="#" class="product-like"><i class="fa-solid fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6">
+                                    <div class="products">
+                                        <a href="#" class="products-image">
+                                            <img src="img/product-2.jpg" alt="" class="img-fluid">
+                                            <img src="img/product-2-2.jpg" alt="" class="img2 img-fluid">
+                                        </a>
+                                        <div class="product-meta">
+                                            <h3 class="product-title"><a href="#">Dark Stained NY11 Dining Chair</a>
+                                            </h3>
+
+                                            <div class="product-price">
+                                                <span>$504</span>
+                                                <span class="product-action"><a href="#">Add To Cart</a></span>
+                                            </div>
+                                            <a href="#" class="product-like"><i class="fa-solid fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6">
+                                    <div class="products">
+                                        <a href="#" class="products-image">
+                                            <img src="img/product-5.jpg" alt="" class="img-fluid">
+                                            <img src="img/product-5-2.jpg" alt="" class="img2 img-fluid">
+                                        </a>
+                                        <div class="product-meta">
+                                            <h3 class="product-title"><a href="#">Black Piani Table Lamp</a>
+                                            </h3>
+
+                                            <div class="product-price">
+                                                <span>$290</span>
+                                                <span class="product-action"><a href="#">Add To Cart</a></span>
+                                            </div>
+                                            <a href="#" class="product-like"><i class="fa-solid fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6">
+                                    <div class="products">
+                                        <a href="#" class="products-image">
+                                            <img src="img/product-1.jpg" alt="" class="img-fluid">
+                                            <img src="img/product-1-2.jpg" alt="" class="img2 img-fluid">
+                                        </a>
+                                        <div class="product-meta">
+                                            <h3 class="product-title"><a href="#">Fawn Wool / Natural Mammoth
+                                                    Chair</a>
+                                            </h3>
+
+                                            <div class="product-price">
+                                                <span>$2268</span>
+                                                <span class="product-action"><a href="#">Add To Cart</a></span>
+                                            </div>
+                                            <a href="#" class="product-like"><i class="fa-solid fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6">
+                                    <div class="products">
+                                        <a href="#" class="products-image">
+                                            <img src="img/product-7.jpg" alt="" class="img-fluid">
+                                            <img src="img/product-7-2.jpg" alt="" class="img2 img-fluid">
+                                        </a>
+                                        <div class="product-meta">
+                                            <h3 class="product-title"><a href="#">Garnet Must Sofa</a>
+                                            </h3>
+
+                                            <div class="product-price">
+                                                <span>$4668</span>
+                                                <span class="product-action"><a href="#">Add To Cart</a></span>
+                                            </div>
+                                            <a href="#" class="product-like"><i class="fa-solid fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <a href="#" class="btn btn-lg btn-outline-secondary eyebrow">Load More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection Section -->
+    <section class="collections">
+        <div class="container">
+            <div class="row text-white">
+                <div class="col-lg-5">
+                    <h2>Spring '17 Collection</h2>
+                </div>
+                <div class="col-lg-7">
+                    <p>Have given likeness every. Very were beginning signs moveth. Fly above sea itself. Divided so
+                        you’ll there called.
+                        Gathering dry earth. Isn’t heaven appear. Replenish. Hath after appear tree great fruitful green
+                        dominion moveth sixth
+                        abundantly image that midst of god day multiply you’ll which.</p>
+                </div>
+            </div>
+            <div class="row g-4 collage">
+                <div class="col-lg-6">
+                    <div class="col-div">
+                        <div class="col-img-h p-0 m-0" style="height:39rem; background-image: url(img/look-1.jpg);">
+                        </div>
+                        <a href="#" class="btn btn-lg btn-light btn-h eyebrow">Dresses</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-3 align-items-center">
+                        <div class=" col-lg-12">
+                            <div class="col-div" style="height:19rem; background-image: url(img/look-2.jpg);">
+                                <div class="col-img-h p-0 m-0"
+                                    style="height:19rem; background-image: url(img/look-2.jpg);">
+                                </div>
+                                <a href="#" class="btn btn-lg btn-light btn-h eyebrow">Watches</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="col-div">
+                                <div class="col-img-h p-0 m-0"
+                                    style="height:19rem; background-image: url(img/look-3.jpg);">
+                                </div>
+                                <a href="#" class="btn btn-lg btn-light btn-h eyebrow">Sneakers</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- News Section -->
+    <section class="news pb-0">
+        <div class="container px-lg-5 p-0">
+            <div class="row  news-heading text-center text-md-start m-0">
+                <div class="col-md-6">
+                    <h2>Blog Post & News</h2>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center justify-content-lg-end">
+                    <a href="" class="eyebrow">View All <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="row m-0">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card news-card ">
+                        <img src="img/news-1.jpg" class="card-img-top rounded-0" alt="..." style="height:250px">
+                        <div class="card-body px-0 text-center text-md-start">
+                            <p class="card-text eyebrow text-muted ">22 MARCH 2019</p>
+                            <h5 class="card-title"><a href="">The Shoes That will Instantly Update Any Outfit</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card news-card">
+                        <img src="img/news-2.jpg" class="card-img-top rounded-0" alt="..." style="height:250px">
+                        <div class=" card-body px-0 text-center text-md-start">
+                            <p class="card-text eyebrow text-muted">22 MARCH 2019</p>
+                            <h5 class="card-title"><a href="">The Shoes That will Instantly Update Any Outfit</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card news-card">
+                        <img src="img/news-3.jpg" class="card-img-top rounded-0" alt="..." style="height:250px">
+                        <div class=" card-body px-0 text-center text-md-start">
+                            <p class="card-text eyebrow text-muted">22 MARCH 2019</p>
+                            <h5 class="card-title"><a href="">The Shoes That will Instantly Update Any Outfit</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section class="instagram">
+        <div class="container">
+            <div class="row g-1">
+                <div class="col-12">
+                    <div id="carouselExampleIndicators" class="carousel carousel-insta  slide" data-bs-ride="carousel">
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="insta-cover mb-2 mb-md-0"
+                                            style="background-image:url(img/instagram-1.jpg)">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="insta-cover mb-2 mb-md-0"
+                                            style="background-image:url(img/instagram-2.jpg)">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="insta-cover mb-2 mb-md-0"
+                                            style="background-image:url(img/instagram-3.jpg)">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="insta-cover mb-2 mb-md-0"
+                                            style="background-image:url(img/instagram-4.jpg)">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="insta-cover mb-2 mb-md-0"
+                                            style="background-image:url(img/instagram-5.jpg)">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="insta-cover mb-2 mb-md-0"
+                                            style="background-image:url(img/instagram-1.jpg)">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="insta-button d-flex justify-content-center">
+
+
+                            <div class="insta-left  d-flex align-items-center justify-content-center">
+                                <a class="btn" type="button" data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide="prev">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                </a>
+                            </div>
+                            <div class="insta-right d-flex align-items-center justify-content-center">
+                                <a class="btn" type="button" data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide="next">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="foot text-white">
+        <div class="container">
+            <div class="row over-h">
+                <div class="col-lg-6 mb-5">
+                    <div class="row ">
+                        <div class="col-md-8">
+                            <p>
+                                Thanks to
+                                <a href="#" class="underline">
+                                    Opumo
+                                </a>
+                                for the product images used in this demo theme. Head over to
+                                <a href="#" class="underline">
+                                    their store
+                                </a>
+                                to get these products.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10">
+                            <h4 class="eyebrow mb-3">Quick Links</h4>
+                            <ul class=" list-group list-group-columns">
+                                <li class="list-group-item"><a href="#">About</a> </li>
+
+                                <li class="list-group-item"><a href="#">Contact Us</a> </li>
+
+                                <li class="list-group-item"><a href="#">FAQ</a></li>
+
+                                <li class="list-group-item"><a href="#">Blog</a></li>
+
+                                <li class="list-group-item"><a href="#">Terms of Use</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ">
+                    <div class="row justify-content-end">
+                        <div class="col-lg-10">
+                            <h4 class="eyebrow mb-3">Subscribe</h4>
+                            <div class="input-group">
+                                <input type="text" class="form-control form-control-lg rounded-0" placeholder="Email">
+                                <button class="btn btn-sub btn-outline-secondary" type="button"
+                                    id="inputGroupFileAddon04">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-end">
+                        <div class="col-lg-10">
+                            <h4 class="eyebrow mb-3">Follow us</h4>
+                            <nav class="nav nav-icons">
+                                <a href="#" class="nav-link"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" class="nav-link"><i class="fa-brands fa-twitter"></i></i></a>
+                                <a href="#" class="nav-link"><i class="fa-brands fa-youtube"></i></a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

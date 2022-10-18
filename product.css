@@ -1,0 +1,652 @@
+/* HTML CSS */
+
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    /* font-weight: 400; */
+    line-height: 1.5;
+    color: #555;
+    text-align: left;
+    background-color: #fff;
+}
+
+section {
+    position: relative;
+    margin: 0 auto;
+    padding: 6.25rem 0 !important;
+}
+
+a {
+    text-decoration: none;
+    color: #4F944F;
+}
+
+p {
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* Offcanvas Search */
+
+.search {
+    height: 15%;
+}
+
+.search input {
+    outline: none;
+    border: none;
+    font-size: 16px;
+    height: auto;
+}
+
+.search button {
+    border-radius: 50%;
+    font-size: 12px;
+    opacity: 0.7 !important;
+}
+
+.search button:hover {
+    background-color: #efefef;
+}
+
+.search input:focus {
+    box-shadow: none;
+}
+
+
+/* Offcanvas Cart */
+
+.offcanvas.show {
+    transform: none;
+}
+
+.offcanvas-end {
+    font-family: 'Mulish', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    font-weight: 400;
+    /* padding: 2rem; */
+    width: 40% !important;
+}
+
+.offcanvas h5,
+.media-title {
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 0;
+}
+
+
+.media img {
+    max-width: 5rem;
+}
+
+.media-body {
+    margin-left: 1.25rem;
+}
+
+.cart-item-close {
+    padding: 0.7rem;
+    border-radius: 50%;
+    font-size: 12px;
+    opacity: 0.7 !important;
+    background-color: #efefef;
+}
+
+.cart-item p {
+    margin-bottom: 0 !important;
+}
+
+.offcanvas-footer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0.9375rem 1.875rem;
+    min-height: 6.25rem;
+    overflow: hidden;
+    border-top: 0;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+    border-radius: 0 !important;
+}
+
+.btn {
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    cursor: pointer;
+    border-radius: 0;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.btn-primary {
+    color: #101010;
+    background-color: #dddddd;
+    border-color: #dddddd;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #4F944F;
+    border-color: #4F944F;
+}
+
+
+/* Offcanvas Cart MediaQuery */
+
+@media screen and (max-width:768px) {
+
+    .offcanvas-end {
+        width: 100% !important;
+    }
+
+    section {
+        padding: 3.25rem 0;
+    }
+
+}
+
+/* Breadcrumb Section */
+
+.bg-light {
+    background-color: #efefef !important;
+}
+
+.breadcrumb-item {
+    position: relative;
+    font-size: 0.75rem;
+    color: #555;
+}
+
+.breadcrumb-item a {
+    color: #555;
+    font-size: 0.75rem;
+}
+
+/* Product Section */
+
+.carousel-main {
+    width: 500px;
+    /* height: 500px; */
+}
+
+.c-active {
+    border: 1px solid #000 !important;
+}
+
+.c-border:hover {
+    border: 1px solid #000 !important;
+}
+
+.product-img {
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.item-brand {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-family: "Muli", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    position: relative;
+    padding-left: 3.125rem;
+    margin-bottom: 0.3125rem;
+}
+
+.item-title {
+    font-weight: 600;
+    line-height: 1.15em;
+    font-size: 3.125rem;
+    color: #000;
+    margin-bottom: 1.875rem;
+}
+
+.item-price {
+    font-size: 1.125rem;
+    font-family: "Muli", sans-serif;
+    color: #000 !important;
+
+
+}
+
+.text-muted {
+    color: #555 !important;
+}
+
+.item-details {
+    /* margin-bottom: 1.875rem; */
+    width: 85%;
+    color: #555;
+
+}
+
+.form-group label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.nav-link .active {
+    background-color: transparent !important;
+    border-radius: 0;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.nav-pills .nav-item {
+    border: 1px solid rgba(128, 128, 128, 0.352);
+    outline: none;
+}
+
+.nav-pills i {
+    z-index: 10;
+}
+
+.nav-pills .nav-link.active {
+    /* color: tr */
+    border: none;
+    background-color: transparent;
+}
+
+.nav-pills .nav-item:hover {
+    border: 1px solid black !important;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #4F944F;
+    border: 0;
+    padding: 1.0625rem 2.125rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.btn-block {
+    display: block;
+    width: 82%;
+}
+
+.btn-primary:hover {
+    background-color: #396e39;
+    border: 0;
+}
+
+
+.nav-actions .nav-item {
+    margin-right: 0.8375rem;
+}
+
+.nav-actions .nav-link {
+    padding: 0.125rem 0;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #555
+}
+
+.dropdown-menu {
+    padding: 15px;
+    border-radius: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.nav-actions .dropdown-item {
+    display: inline;
+
+    line-height: 2em;
+    font-size: 0.875rem;
+}
+
+.nav-actions .dropdown-menu .dropdown-item:hover {
+    background: transparent;
+    color: #4F944F;
+}
+
+.nav-actions .dropdown-menu .dropdown-item:hover a {
+    background: transparent;
+}
+
+/* Product MediaQuery */
+
+@media screen and (max-width:768px) {
+    .carousel {
+        width: auto;
+        /* height: 500px; */
+
+    }
+
+    .row-img {
+        margin-bottom: 3rem;
+
+    }
+
+    .btn-block {
+
+        width: 100%;
+    }
+
+
+}
+
+/* Review Section */
+
+.reviews {
+    border-bottom-width: 1px;
+    border-color: #dddddd;
+    border-style: solid;
+}
+
+.rate span {
+    display: block;
+    font-size: 5rem;
+    line-height: 1em;
+    color: #000;
+}
+
+.eyebrow {
+    font-size: 0.75rem;
+
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #4F944F !important;
+}
+
+.reviews p {
+    width: 85%;
+}
+
+.reviews .list-group .list-group-item {
+    padding: 0;
+    background: transparent;
+    border: 0;
+    font-size: 0.875rem;
+}
+
+.list-group-line .list-group-item+.list-group-item {
+    margin-top: 0.9375rem;
+    padding-top: 0.9375rem;
+    border-top: 1px solid #dddddd;
+}
+
+
+.reviews .list-group-item a:hover {
+    color: #4F944F !important;
+}
+
+/* NavTabs & Carousel Section */
+
+.product-cover {
+    height: 18rem;
+    /* width: 10rem; */
+    background-position: center center;
+    background-size: cover;
+}
+
+
+.carousel-product {
+    position: relative;
+}
+
+.prod-button {
+    position: absolute;
+    top: 30rem;
+    right: 0rem;
+}
+
+.prod-left,
+.prod-right {
+    width: 3.55rem;
+    height: 3.55rem;
+
+    /* background-color: #4F944F; */
+    /* border: 1px solid #000; */
+}
+
+.prod-button:hover {
+
+    color: #000;
+    /* border: 1px solid #000; */
+}
+
+
+.prod-left i,
+.prod-right i {
+    color: #555;
+}
+
+.prod-left i:hover {
+    color: #000;
+}
+
+.prod-right i:hover {
+    color: #000;
+}
+
+.product-image {
+    /* opacity: 1; */
+    position: relative;
+}
+
+.img-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    opacity: 0;
+
+
+}
+
+.product-image:hover .img-2 {
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+.btn-ico {
+    position: absolute;
+    top: 0;
+    border: #000 1px solid;
+    right: 1rem;
+}
+
+.product-meta {
+    position: relative;
+    margin-top: 0.625rem;
+    padding-right: 1.875rem;
+}
+
+.product-title a {
+    display: block;
+    color: #555;
+    line-height: 1.4em;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.9375rem;
+}
+
+.product-action {
+    margin-left: 0.625rem;
+    opacity: 0;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+}
+
+.carousel-product .col-lg-3:hover .product-action {
+    opacity: 1 !important;
+    transition: all 0.2s;
+}
+
+.product-like {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    text-align: right;
+    color: #6c757d;
+    z-index: 6;
+
+}
+
+.product-like:hover i {
+    transition: all 0.2s;
+    color: #4F944F;
+}
+
+
+.nav .nav-link {
+    color: #555;
+    font-size: 0.875rem;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    font-weight: 200;
+
+}
+
+.nav .nav-link.active {
+    color: #000;
+    background: transparent;
+}
+
+/* NavTabs & Carousel MediaQuery */
+
+@media screen and (max-width:768px) {
+
+    .Navcar {
+        padding: 2.25rem 0 !important;
+    }
+
+    .prod-button {
+        position: static;
+    }
+
+    .product-cover {
+        height: 15rem !important;
+    }
+}
+
+/* Footer Section */
+
+footer {
+    position: relative;
+    margin: 0 auto;
+    /* padding: 8rem; */
+}
+
+
+.foot {
+    padding: 5rem 7.1rem !important;
+    background-color: #101010 !important;
+}
+
+.over-h {
+    overflow: hidden;
+}
+
+
+.foot p {
+    line-height: 1.8;
+    padding-right: 2rem;
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.foot a {
+    color: #fff;
+}
+
+.foot h4 {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.foot .list-group {
+    flex-wrap: wrap;
+    flex-direction: initial;
+}
+
+.foot .list-group-item {
+    width: 50%;
+    margin-bottom: 0.625rem;
+    padding: 0;
+    background: transparent;
+    border: 0;
+}
+
+.foot .list-group-item a {
+    font-size: 0.875rem;
+}
+
+.foot .row:not(:last-child) {
+    margin-bottom: 2.5rem;
+}
+
+.foot input {
+    background-color: transparent;
+    padding: 1.0625rem 1.0625rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.foot input:focus {
+    box-shadow: none;
+    background-color: transparent;
+    border: 1px solid #dddddd;
+}
+
+.foot .btn-sub {
+    background-color: #fff;
+    color: #000;
+    padding: 0.9375rem 1.875rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.foot .nav-icons {
+    margin: -0.625rem 0 0 -0.625rem;
+}
+
+.foot .nav-link {
+    font-size: 0.875rem;
+    letter-spacing: .05em;
+    color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    padding: 0.625rem;
+}
+
+.foot .nav-link :hover {
+    color: #fff;
+
+}
+
+.foot i {
+    padding: 0;
+    font-size: 1rem;
+}
+
+/* Footer MediaQuery */
+
+@media screen and (max-width:768px) {
+
+    .foot {
+        padding: 5rem 0.3rem !important;
+    }
+
+}

@@ -1,0 +1,640 @@
+/* HTML CSS */
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #555;
+    text-align: left;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+section {
+    position: relative;
+    margin: 0 auto;
+    padding: 6.25rem 0;
+}
+
+a {
+    text-decoration: none;
+    color: #4F944F;
+}
+
+
+ul {
+    list-style: none;
+}
+
+h2,
+h1,
+h5 {
+    font-family: "Muli", sans-serif;
+    font-weight: 400;
+    line-height: 1.25;
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-family: "Muli", sans-serif;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #000;
+    font-size: 1.875rem;
+}
+
+
+/* Offcanvas Search */
+
+.search {
+    height: 15%;
+}
+
+.mb-10,
+.my-10 {
+    margin-bottom: 6.25rem !important;
+}
+
+.search input {
+    outline: none;
+    border: none;
+    font-size: 16px;
+    height: auto;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+
+.search button {
+    border-radius: 50%;
+    font-size: 12px;
+    opacity: 0.7 !important;
+}
+
+.search button:hover {
+    transition: all 0.3s;
+    background-color: #efefef;
+}
+
+.search input:focus {
+    box-shadow: none;
+}
+
+
+/* Offcanvas Cart */
+
+.offcanvas.show {
+    transform: none;
+}
+
+.offcanvas-end {
+    font-family: 'Mulish', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    font-weight: 400;
+    /* padding: 2rem; */
+    width: 40% !important;
+}
+
+.offcanvas h5,
+.media-title {
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 0;
+}
+
+.media img {
+    max-width: 5rem;
+}
+
+.media-body {
+    margin-left: 1.25rem;
+}
+
+.cart-item-close {
+    padding: 0.7rem;
+    border-radius: 50%;
+    font-size: 12px;
+    opacity: 0.7 !important;
+    background-color: #efefef;
+}
+
+.cart-item p {
+    margin-bottom: 0 !important;
+}
+
+.offcanvas-footer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0.9375rem 1.875rem;
+    min-height: 6.25rem;
+    overflow: hidden;
+    border-top: 0;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+    border-radius: 0 !important;
+}
+
+.btn {
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    cursor: pointer;
+    border-radius: 0;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.btn-primary {
+    color: #101010;
+    background-color: #dddddd;
+    border-color: #dddddd;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #4F944F;
+    border-color: #4F944F;
+}
+
+.row:not(:last-child) {
+    margin-bottom: 2.5rem;
+}
+
+
+/* Offcanvas Cart MediaQuery */
+
+@media screen and (max-width:768px) {
+
+    .offcanvas-end {
+        width: 100% !important;
+    }
+
+    section {
+        padding: 3.25rem 0;
+    }
+
+}
+
+
+/* Profile Title Section */
+
+.hero {
+    background-color: rgb(59, 65, 107) !important;
+}
+
+
+/* Profile Main Setion */
+
+.profile-main .nav {
+    background: #efefef;
+}
+
+.profile-main .nav-pills .nav-link {
+    padding: 1.25rem;
+    z-index: 10;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    border-radius: 0;
+    border-top: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+    color: #6c757d;
+}
+
+.profile-main .nav-pills:last-child {
+    border-bottom: 1px solid #dddddd;
+}
+
+.profile-main .nav-pills .nav-link.active {
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.profile-main .nav-pills .nav-link:hover {
+    color: #000;
+    transition: all 0.3s;
+}
+
+
+/* Profile NavTab */
+
+.profile-main .form-group label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #555;
+}
+
+.profile-main .form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 1.875rem + 2px);
+    padding: 0.9375rem 0.9375rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid #dddddd;
+    border-radius: 0;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.profile-main input:focus {
+    box-shadow: none;
+    border-color: #4F944F;
+}
+
+.profile-main .btn-primary {
+    color: #fff;
+    background-color: #4F944F;
+    border: 0;
+    padding: 1.0625rem 2.125rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.profile-main .btn-primary:hover {
+    background-color: #396e39;
+    border: 0;
+    transition: all 0.3s;
+}
+
+
+/* Order NavTab */
+
+.order {
+    padding-right: 15px;
+    padding-left: 15px;
+    border: 1px solid #dddddd;
+    box-sizing: border-box;
+}
+
+.eyebrow {
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #4F944F;
+}
+
+.action:hover {
+    color: #000 !important;
+    transition: all 0.3s;
+}
+
+
+.order-number {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+
+.order-status {
+    position: relative;
+    padding-left: 1.25rem;
+    font-size: 0.875rem;
+    color: #555;
+}
+
+.order-preview {
+    display: flex;
+    margin-right: -15px;
+    list-style: none;
+    overflow: hidden;
+}
+
+.order-preview img {
+    max-height: 6.25rem;
+    vertical-align: middle !important;
+}
+
+.pagination .page-link {
+    padding: 0;
+    text-align: center;
+    width: calc(1.5em + 1.875rem);
+    height: calc(1.5em + 1.875rem);
+    line-height: calc(1.5em + 1.875rem);
+    color: #555 !important;
+    border-color: transparent !important;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #000;
+    background-color: transparent;
+    border-color: #000;
+}
+
+.pagination-sm .page-item:first-child .page-link {
+    border-radius: 0;
+    border-color: #000 !important;
+}
+
+.pagination-sm .page-item:last-child .page-link {
+    border-radius: 0;
+}
+
+.page-link:hover {
+    background-color: transparent !important;
+    border-color: #000 !important;
+    transition: all 0.3s;
+}
+
+/* Profile NavTab MediaQuery */
+
+@media screen and (max-width:768px) {
+
+    .order {
+        padding-top: 15px;
+    }
+
+    .order .row>*:last-child {
+        margin-top: 15px;
+        border-top: 1px solid #dddddd;
+    }
+
+    .order-preview {
+        justify-content: start !important;
+        padding-right: -15px !important;
+    }
+}
+
+
+/* Addresses & Payment NavTab */
+
+.card {
+    border-radius: 0 !important;
+}
+
+.card-data .card-header {
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    background: transparent;
+    border-bottom: 1px solid #dddddd;
+    padding: 0 0 0 1.875rem;
+    margin-bottom: 0;
+
+}
+
+.card-data .card-title {
+    font-size: 1rem;
+    margin-bottom: 0 !important;
+
+}
+
+.card-data button {
+
+    width: calc(1.5em + 2.125rem);
+    height: calc(1.5em + 2.125rem);
+    color: #101010;
+    background-color: #dddddd;
+    border-color: #dddddd;
+
+}
+
+.card-data button:focus {
+    box-shadow: none;
+}
+
+.card-body {
+    padding: 1.875rem;
+}
+
+.card-data .card-text {
+    color: #000;
+    font-size: 0.9375rem;
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+.dropdown-menu {
+    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 20%);
+    margin: 0;
+    padding: 15px;
+    border: 0;
+
+}
+
+.nav-actions .dropdown-item {
+    display: inline;
+
+    line-height: 2em;
+    font-size: 0.875rem;
+}
+
+.custom-select {
+
+    display: inline-block;
+    width: 100%;
+    height: calc(1.5em + 1.875rem + 2px);
+    padding: 0.9375rem 1.9375rem 0.9375rem 0.9375rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    vertical-align: middle;
+    background-color: transparent;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid transparent;
+    border-radius: 0;
+
+
+}
+
+.custom-select:focus {
+    box-shadow: none;
+    border-color: #4F944F;
+}
+
+
+/* Wihslist NavTab */
+
+.product-image {
+    /* opacity: 1; */
+    position: relative;
+}
+
+.img-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    opacity: 0;
+}
+
+.product-image:hover .img-2 {
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+.btn-ico {
+    position: absolute;
+    top: 0;
+    border: #000 1px solid;
+    right: 1rem;
+}
+
+.product-meta {
+    position: relative;
+    margin-top: 0.625rem;
+    padding-right: 1.875rem;
+}
+
+.product-title a {
+    display: block;
+    color: #555;
+    line-height: 1.4em;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.9375rem;
+}
+
+.product-action {
+    margin-left: 0.625rem;
+    opacity: 0;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+}
+
+.product:hover .product-action {
+    opacity: 1 !important;
+    transition: all 0.2s;
+}
+
+.product-like {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    text-align: right;
+    color: #6c757d;
+    z-index: 6;
+}
+
+.product-like:hover i {
+    transition: all 0.2s;
+    color: #4F944F;
+}
+
+
+/* Footer Section */
+
+footer {
+    position: relative;
+    margin: 0 auto;
+    /* padding: 8rem; */
+}
+
+
+.foot {
+    padding: 5rem 7.1rem !important;
+    background-color: #101010 !important;
+}
+
+.over-h {
+    overflow: hidden;
+}
+
+
+.foot p {
+    line-height: 1.8;
+    padding-right: 2rem;
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.foot a {
+    color: #fff;
+}
+
+.foot h4 {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.foot .list-group {
+    flex-wrap: wrap;
+    flex-direction: initial;
+}
+
+.foot .list-group-item {
+    width: 50%;
+    margin-bottom: 0.625rem;
+    padding: 0;
+    background: transparent;
+    border: 0;
+}
+
+.foot .list-group-item a {
+    font-size: 0.875rem;
+}
+
+.foot input {
+    background-color: transparent;
+    padding: 1.0625rem 1.0625rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.foot input:focus {
+    box-shadow: none;
+    background-color: transparent;
+    border: 1px solid #dddddd;
+}
+
+.foot .btn-sub {
+    background-color: #fff;
+    color: #000;
+    padding: 0.9375rem 1.875rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.foot .nav-icons {
+    margin: -0.625rem 0 0 -0.625rem;
+}
+
+.foot .nav-link {
+    font-size: 0.875rem;
+    letter-spacing: .05em;
+    color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    padding: 0.625rem;
+}
+
+.foot .nav-link :hover {
+    color: #fff;
+}
+
+.foot i {
+    padding: 0;
+    font-size: 1rem;
+}
+
+
+/* Footer MediaQuery */
+
+@media screen and (max-width:768px) {
+
+    .foot {
+        padding: 5rem 0.3rem !important;
+    }
+
+}

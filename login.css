@@ -1,0 +1,404 @@
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #555;
+    text-align: left;
+    background-color: #fff;
+}
+
+section {
+    position: relative;
+    margin: 0 auto;
+    padding: 6.25rem 0;
+}
+
+a {
+    text-decoration: none;
+    color: #4F944F;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.search {
+    height: 15%;
+
+}
+
+
+
+.search input {
+    outline: none !important;
+    border: none !important;
+    font-size: 16px;
+    height: auto;
+
+}
+
+.search button {
+
+    border-radius: 50%;
+    font-size: 12px;
+    opacity: 0.7 !important;
+
+
+}
+
+.search button:hover {
+    background-color: #efefef;
+
+
+}
+
+.search input:focus {
+    box-shadow: none;
+}
+
+
+.offcanvas.show {
+    transform: none;
+}
+
+.offcanvas-end {
+    font-family: 'Mulish', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    font-weight: 400;
+    /* padding: 2rem; */
+    width: 40% !important;
+}
+
+.offcanvas h5,
+.media-title {
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 0;
+}
+
+.media img {
+    max-width: 5rem;
+}
+
+.media-body {
+    margin-left: 1.25rem;
+}
+
+.cart-item-close {
+    padding: 0.7rem;
+    border-radius: 50%;
+    font-size: 12px;
+    opacity: 0.7 !important;
+    background-color: #efefef;
+
+
+}
+
+.cart-item p {
+    margin-bottom: 0 !important;
+}
+
+.offcanvas-footer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0.9375rem 1.875rem;
+    min-height: 6.25rem;
+    overflow: hidden;
+    border-top: 0;
+}
+
+
+.btn-block {
+    display: block;
+    width: 100%;
+    border-radius: 0 !important;
+}
+
+
+.btn {
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    cursor: pointer;
+    border-radius: 0;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.btn-primary {
+    color: #101010;
+    background-color: #dddddd;
+    border-color: #dddddd;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #4F944F;
+    border-color: #4F944F;
+}
+
+@media screen and (max-width:768px) {
+
+    .offcanvas-end {
+        width: 100% !important;
+    }
+
+}
+
+.row:not(:last-child) {
+    margin-bottom: 2.5rem;
+}
+
+
+
+
+.login {
+    background-image: url(img/background-2.jpg);
+    height: 800px;
+    background-size: cover;
+    background-position: middle;
+    background-repeat: no-repeat;
+}
+
+.accordion-item {
+    padding: 1.25rem;
+    background: #fff;
+    border-color: transparent;
+}
+
+.accordion-item button {
+    font-size: 1.125rem !important;
+}
+
+.form-group label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.form-control {
+    border: 1px solid #dddddd !important;
+    padding: 16px;
+}
+
+.btn-success {
+
+    color: #fff;
+    background-color: #4F944F;
+    border: 0;
+    padding: 1.0625rem 2.125rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.btn-success:hover {
+    background-color: #396e39 !important;
+    /* border-color: #396e39 !important; */
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #4F944F;
+    background-color: #4F944F;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button::after {
+    background-image: url(img/icons8-plus-24.png);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(img/icons8-multiply-24.png);
+    transform: rotate(-180deg);
+}
+
+.accordion-button:not(.collapsed) {
+    color: #000 !important;
+    background-color: transparent;
+    box-shadow: none !important;
+}
+
+.eyebrow {
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #555;
+}
+
+.form-group .form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 1.875rem + 2px);
+    padding: 0.9375rem 0.9375rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid #dddddd;
+    border-radius: 0;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-group input:focus {
+    box-shadow: none;
+    border-color: #4F944F !important;
+}
+
+.custom-check-lable {
+    font-size: 0.875rem;
+    color: #6c757d !important;
+    font-weight: 300;
+}
+
+.form-check-input:checked {
+    background-color: #4F944F;
+    border-color: #4F944F;
+
+}
+
+.form-switch .form-check-input:focus {
+    background-image: url("img/switch.svg   ");
+    box-shadow: none;
+    border-color: #4F944F !important;
+}
+
+
+
+@media screen and (max-width:768px) {
+
+    .login {
+        height: 800px;
+        padding: 0;
+    }
+
+    .login .row {
+        height: 500px !important;
+        /* border: 1px solid white; */
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    position: relative;
+    margin: 0 auto;
+    /* padding: 8rem; */
+}
+
+
+.foot {
+    padding: 5rem 7.1rem !important;
+    background-color: #101010 !important;
+}
+
+.over-h {
+    overflow: hidden;
+}
+
+
+.foot p {
+    line-height: 1.8;
+    padding-right: 2rem;
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.foot a {
+    color: #fff;
+}
+
+.foot h4 {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.foot .list-group {
+    flex-wrap: wrap;
+    flex-direction: initial;
+}
+
+.foot .list-group-item {
+    width: 50%;
+    margin-bottom: 0.625rem;
+    padding: 0;
+    background: transparent;
+    border: 0;
+}
+
+.foot .list-group-item a {
+    font-size: 0.875rem;
+}
+
+.foot input {
+    background-color: transparent;
+    padding: 1.0625rem 1.0625rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.foot input:focus {
+    box-shadow: none;
+    background-color: transparent;
+    border: 1px solid #dddddd;
+}
+
+.foot .btn-sub {
+    background-color: #fff;
+    color: #000;
+    padding: 0.9375rem 1.875rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.foot .nav-icons {
+    margin: -0.625rem 0 0 -0.625rem;
+}
+
+.foot .nav-link {
+    font-size: 0.875rem;
+    letter-spacing: .05em;
+    color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    padding: 0.625rem;
+}
+
+.foot .nav-link :hover {
+    color: #fff;
+
+}
+
+.foot i {
+    padding: 0;
+    font-size: 1rem;
+}
+
+@media screen and (max-width:768px) {
+
+    .foot {
+        padding: 5rem 0.3rem !important;
+    }
+
+}

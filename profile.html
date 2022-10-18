@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/4dce9aeb40.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="profile.css">
+    <title>Profile</title>
+</head>
+
+<body>
+    <!-- header Section -->
+    <header class="header header-dark sticky">
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+                    <a class="navbar-brand order-1 order-lg-2 " href="index.html"><img src="img/logo.svg" alt=""></a>
+                    <button class="navbar-toggler order-2 border " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse order-3 order-lg-1" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-lg-5 me-auto mb-2 mb-lg-0 ">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="product.html">Products</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="faq.html">
+                                    FAQ
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <div class="collapse navbar-collapse order-4 order-lg-3" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto me-lg-5 mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="profile.html">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass" type="button"
+                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                                        aria-controls="offcanvasTop"></i></a>
+                            </li>
+                            <li class="nav-item cart">
+                                <a class="nav-link" href="#" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                    <span class="  ">Cart</span>
+                                    <span class=" ">2</span>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-top search" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-body d-flex justify-content-center align-items-center search">
+                <input type="text" class="form-control" placeholder="Type your search here">
+                <button type="button" class="btn-close text-reset p-3" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-end p-4" tabindex="-1" id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel">Cart</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="row g-3">
+                    <div class="col-12">
+                        <div class="cart-item">
+                            <div class="row align-items-center">
+                                <div class="col-9">
+                                    <div class="media d-flex align-items-center">
+                                        <a href="#"><img src="img/product-3.jpg" alt="" class="img-fluid"></a>
+                                        <div class="media-body">
+                                            <h5 class="media-title">Black IC Pendant Light</h5>
+                                            <p class="media-subtitle">Black, Steel</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2 text-center">
+                                    <div class="cart-item-price d-flex align-items-center">
+                                        <p>$90</p>
+                                    </div>
+                                </div>
+                                <div class="col-1  p-1 d-flex align-items-center">
+                                    <div class="cart-close-icon ">
+                                        <button type="button" class="btn-close cart-item-close "
+                                            aria-label="Close"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 ">
+                        <div class="cart-item">
+                            <div class="row align-items-center justify-content-evenly">
+                                <div class="col-9">
+                                    <div class="media d-flex align-items-center ">
+                                        <a href="#"><img src="img/product-4.jpg" alt="" class="img-fluid"></a>
+                                        <div class="media-body">
+                                            <h5 class="media-title">Red Analog Magazine Rack</h5>
+                                            <p class="media-subtitle">Red</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2 text-center">
+                                    <div class="cart-item-price d-flex align-items-center">
+                                        <p>$120</p>
+                                    </div>
+                                </div>
+                                <div class="col-1  p-1 d-flex align-items-center">
+                                    <div class="cart-close-icon ">
+                                        <button type="button" class="btn-close cart-item-close "
+                                            aria-label="Close"></button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 ">
+                        <div class="cart-item">
+                            <div class="row align-items-center">
+                                <div class="col-9">
+                                    <div class="media d-flex align-items-center ">
+                                        <a href="#"><img src="img/product-24.jpg" alt="" class="img-fluid"></a>
+                                        <div class="media-body">
+                                            <h5 class="media-title">Closca Helmet</h5>
+                                            <p class="media-subtitle">Black</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2 text-center ">
+                                    <div class="cart-item-price d-flex align-items-center ">
+                                        <p>$132</p>
+                                    </div>
+                                </div>
+                                <div class="col-1 p-1 d-flex align-items-center">
+                                    <div class="cart-close-icon d-flex align-items-center ">
+                                        <button type="button" class="btn-close cart-item-close "
+                                            aria-label="Close"></button>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas-footer">
+                <div class="container-fluid">
+                    <div class="row g-0">
+                        <div class="col d-none d-md-block">
+                            <a href="#" class="btn btn-lg btn-block btn-primary">View Cart</a>
+                        </div>
+                        <div class="col ">
+                            <a href="#" class="btn btn-lg btn-block btn-secondary">Checkout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Profile Title Section -->
+    <section class="hero bg-purple text-white py-5">
+        <div class="container">
+            <div class="row g-4 g-md-5 align-items-end">
+                <div class="col-md-6 text-center text-md-start">
+                    <h1 class="mb-0">Michael Campbell</h1>
+                    <p class="text-muted">New York, USA</p>
+                </div>
+                <div class="col-md-6 text-white text-center text-md-end">
+                    <a href="#" class="btn btn-sm btn-outline-light">Sign out</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Main Section -->
+    <section class="profile-main pt-5">
+        <div class="container">
+            <div class="row g-4 justify-content-between">
+                <div class="col-lg-3">
+                    <div class="nav flex-column nav-pills text-start rounded-0" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+                        <button class="nav-link active text-start" id="v-pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                            aria-selected="true">Profile</button>
+                        <button class="nav-link text-start" id="v-pills-order-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-order" type="button" role="tab" aria-controls="v-pills-order"
+                            aria-selected="false">Orders</button>
+                        <button class="nav-link text-start" id="v-pills-address-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-address" type="button" role="tab" aria-controls="v-pills-address"
+                            aria-selected="false">Addresses</button>
+                        <button class="nav-link text-start" id="v-pills-payment-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-payment" type="button" role="tab" aria-controls="v-pills-payment"
+                            aria-selected="false">Payments</button>
+                        <button class="nav-link text-start" id="v-pills-wishlist-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-wishlist" type="button" role="tab" aria-controls="v-pills-wishlist"
+                            aria-selected="false">Wishlist</button>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel"
+                                    aria-labelledby="v-pills-profile-tab">
+                                    <div class="row mb-2">
+                                        <div class="col-12">
+                                            <h3>Personal Data</h3>
+                                        </div>
+                                    </div>
+                                    <div class="row g-2">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="formGroupExampleInput1" class="form-label">First
+                                                    name</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput1"
+                                                    placeholder="First name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="formGroupExampleInput2" class="form-label">Last Name</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput2"
+                                                    placeholder="Last name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="formGroupExampleInput3" class="form-label">Company</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput3"
+                                                    placeholder="Company">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="formGroupExampleInput4" class="form-label">Street</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput4"
+                                                    placeholder="Street">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="formGroupExampleInput5" class="form-label">Zip</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput5"
+                                                    placeholder="Zip">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="formGroupExampleInput6" class="form-label">Telephone</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput6"
+                                                    placeholder="Telephone">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="formGroupExampleInput7" class="form-label">Email</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput7"
+                                                    placeholder="Email">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2 mt-6">
+                                        <div class="col-12">
+                                            <h3>Password</h3>
+                                        </div>
+                                    </div>
+                                    <div class="row g-2">
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="formGroupExampleInput1" class="form-label">Old
+                                                    Password</label>
+                                                <input type="password" class="form-control" id="formGroupExampleInput1"
+                                                    placeholder="Password">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="formGroupExampleInput1" class="form-label">New
+                                                    Password</label>
+                                                <input type="password" class="form-control" id="formGroupExampleInput1"
+                                                    placeholder="Password">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="formGroupExampleInput1" class="form-label">Retype New
+                                                    Password</label>
+                                                <input type="password" class="form-control" id="formGroupExampleInput1"
+                                                    placeholder="Password">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <a href="#" class="btn btn-lg btn-primary">Save Changes</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-order" role="tabpanel"
+                                    aria-labelledby="v-pills-order-tab">
+                                    <div class="row mb-2">
+                                        <div class="col-12">
+                                            <h3>Orders</h3>
+                                            <p class="eyebrow text-muted">8 Items</p>
+                                        </div>
+                                    </div>
+                                    <div class="row g-2">
+                                        <div class="col-12">
+                                            <div class="order">
+                                                <div class="row align-items-center">
+                                                    <div class="col-lg-4">
+                                                        <h3 class="order-number">Order 451534</h3>
+                                                        <a href="#" class="action eyebrow underline">View Order <i
+                                                                class="fa-solid fa-arrow-right"></i></a>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <span class="order-status">
+                                                            <i class="fa-solid fa-period"></i> Shipped on 15 Apr,
+                                                            2019
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <ul class="order-preview justify-content-end mb-0 ps-0">
+                                                            <li>
+                                                                <a href="#"><img src="img/product-1.jpg" alt=""
+                                                                        class="imgfluid"></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><img src="img/product-2.jpg" alt=""
+                                                                        class="imgfluid"></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row g-1">
+                                        <div class="col-12">
+                                            <div class="order">
+                                                <div class="row align-items-center">
+                                                    <div class="col-lg-4">
+                                                        <h3 class="order-number">Order 165342</h3>
+                                                        <a href="#" class="action eyebrow underline">View Order <i
+                                                                class="fa-solid fa-arrow-right"></i></a>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <span class="order-status">
+                                                            <i class="fa-solid fa-period"></i> Cancelled
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-lg-4">
+
+                                                        <ul class="order-preview justify-content-end mb-0 ps-0">
+                                                            <li>
+                                                                <a href="#" data-bs-toggle="tooltip"
+                                                                    data-bs-placement="top"
+                                                                    title="Black Low Curve Iceman Trimix Sneakers"><img
+                                                                        src="img/product-4.jpg" alt=""
+                                                                        class="imgfluid"></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" data-bs-toggle="tooltip"
+                                                                    data-bs-placement="top"
+                                                                    title="Black Low Curve Iceman Trimix Sneakers"><img
+                                                                        src="img/product-5.jpg" alt=""
+                                                                        class="imgfluid"></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" data-bs-toggle="tooltip"
+                                                                    data-bs-placement="top"
+                                                                    title="Black Low Curve Iceman Trimix Sneakers"><img
+                                                                        src="img/product-6.jpg" alt=""
+                                                                        class="imgfluid"></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row g-1">
+                                        <div class="col-12">
+                                            <div class="order">
+                                                <div class="row align-items-center">
+                                                    <div class="col-lg-4">
+                                                        <h3 class="order-number">Order 524312</h3>
+                                                        <a href="#" class="action eyebrow underline">View Order <i
+                                                                class="fa-solid fa-arrow-right"></i></a>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <span class="order-status">
+                                                            <i class="fa-solid fa-period"></i> In Progress
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-lg-4">
+
+                                                        <ul class="order-preview justify-content-end mb-0 ps-0">
+                                                            <li>
+                                                                <a href="#" data-bs-toggle="tooltip"
+                                                                    data-bs-placement="top"
+                                                                    title="Black Low Curve Iceman Trimix Sneakers"><img
+                                                                        src="img/product-11.jpg" alt=""
+                                                                        class="imgfluid"></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <nav aria-label="...">
+                                                <ul class="pagination pagination-sm rounded-0">
+                                                    <li class="page-item active" aria-current="page">
+                                                        <span class="page-link ">1</span>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-address" role="tabpanel"
+                                    aria-labelledby="v-pills-address-tab">
+                                    <div class="row mb-2">
+                                        <div class="col-12">
+                                            <h3>Addresses</h3>
+                                            <p class="eyebrow text-muted">2 Entry</p>
+                                        </div>
+                                    </div>
+                                    <div class="row g-4">
+                                        <div class="col-md-6">
+                                            <div class="card card-data">
+                                                <div class="card-header">
+                                                    <div class="row align-items-center">
+                                                        <div class="col">
+                                                            <h3 class="card-title">Address 1</h3>
+                                                        </div>
+                                                        <div class="col text-end">
+                                                            <div class="dropdown">
+                                                                <button type="button" class="btn"
+                                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                                </button>
+                                                                <ul class="dropdown-menu rounded-0">
+                                                                    <li><a class="dropdown-item" href="#">Edit</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item" href="#">Delete</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body w-75">
+                                                    <h5 class="eyebrow text-muted">Where</h5>
+                                                    <p class="card-text">1620 East Ayre Str
+                                                        Suite M3115662
+                                                        Wilmington, DE 19804
+                                                        United States</p>
+                                                    <h5 class="eyebrow text-muted">To</h5>
+                                                    <p class="card-text">Michael Doe</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card card-data">
+                                                <div class="card-header">
+                                                    <div class="row align-items-center">
+                                                        <div class="col">
+                                                            <h3 class="card-title">Address 2</h3>
+                                                        </div>
+                                                        <div class="col text-end">
+                                                            <div class="dropdown">
+                                                                <button type="button" class="btn"
+                                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                                </button>
+                                                                <ul class="dropdown-menu rounded-0">
+                                                                    <li><a class="dropdown-item" href="#">Edit</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item" href="#">Delete</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body w-75">
+                                                    <h5 class="eyebrow text-muted">Where</h5>
+                                                    <p class="card-text">1620 East Ayre Str
+                                                        Suite M3115662
+                                                        Wilmington, DE 19804
+                                                        United States</p>
+                                                    <h5 class="eyebrow text-muted">To</h5>
+                                                    <p class="card-text">Michael Doe</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h3>New Address</h3>
+                                        </div>
+                                    </div>
+                                    <div class="row g-2">
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="city" class="form-label">City</label>
+                                                <input type="text" class="form-control" id="city">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="address" class="form-label">Adddress</label>
+                                                <input type="text" class="form-control" id="address">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-6">
+                                            <div class="form-group">
+                                                <label for="nr" class="form-label">NR</label>
+                                                <input type="text" class="form-control" id="nr">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-6">
+                                            <div class="form-group">
+                                                <label for="ap" class="form-label">AP</label>
+                                                <input type="text" class="form-control" id="ap">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <a href="#" class="btn btn-lg btn-primary">Add</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-payment" role="tabpanel"
+                                    aria-labelledby="v-pills-payment-tab">
+                                    <div class="row mb-2">
+                                        <div class="col-12">
+                                            <h3>Payment</h3>
+                                            <p class="eyebrow text-muted">1 Entry</p>
+                                        </div>
+                                    </div>
+                                    <div class="row g-4">
+                                        <div class="col-md-6">
+                                            <div class="card card-data">
+                                                <div class="card-header">
+                                                    <div class="row align-items-center">
+                                                        <div class="col">
+                                                            <h3 class="card-title">Visa</h3>
+                                                        </div>
+                                                        <div class="col text-end">
+                                                            <div class="dropdown">
+                                                                <button type="button" class="btn"
+                                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                                </button>
+                                                                <ul class="dropdown-menu rounded-0">
+                                                                    <li><a class="dropdown-item" href="#">Edit</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item" href="#">Delete</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body w-75">
+                                                    <h5 class="eyebrow text-muted">Payment Method</h5>
+                                                    <p class="card-text"><b>Visa</b> ends in 1537 Exp: 8/2022</p>
+                                                    <h5 class="eyebrow text-muted">Last Payment</h5>
+                                                    <p class="card-text"><b>$7.00</b> successful on 04/14/2019</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card card-data">
+                                                <div class="card-header">
+                                                    <div class="row align-items-center">
+                                                        <div class="col">
+                                                            <h3 class="card-title">Paypal</h3>
+                                                        </div>
+                                                        <div class="col text-end">
+                                                            <div class="dropdown">
+                                                                <button type="button" class="btn"
+                                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                                </button>
+                                                                <ul class="dropdown-menu rounded-0">
+                                                                    <li><a class="dropdown-item" href="#">Edit</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item" href="#">Delete</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body w-75">
+                                                    <h5 class="eyebrow text-muted">Mail</h5>
+                                                    <p class="card-text">payment@webuildthemes.com</p>
+                                                    <h5 class="eyebrow text-muted">Last Payment</h5>
+                                                    <p class="card-text"><b>$19.00</b> successful on 05/15/2019</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h3>New Payment Method</h3>
+                                        </div>
+                                    </div>
+                                    <div class="row g-2">
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="city" class="form-label">Card Number</label>
+                                                <input type="text" class="form-control" id="city">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="address" class="form-label">Name on Card</label>
+                                                <input type="text" class="form-control" id="address">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-6">
+                                            <div class="form-group">
+                                                <label for="Month" class="form-label">Month</label>
+                                                <select class="form-select custom-select"
+                                                    aria-label="Default select example">
+                                                    <option selected>Open this select menu</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-6">
+                                            <div class="form-group">
+                                                <label for="year" class="form-label">Year</label>
+                                                <select class="form-select custom-select"
+                                                    aria-label="Default select example">
+                                                    <option selected>Open this select menu</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <a href="#" class="btn btn-lg btn-primary">Add</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-wishlist" role="tabpanel"
+                                    aria-labelledby="v-pills-wishlist-tab">
+                                    <div class="row mb-2 justify-content-center">
+                                        <div class="col-12">
+                                            <h3>Wishlist</h3>
+                                            <p class="eyebrow text-muted">3 Products</p>
+                                        </div>
+                                        <div class="row g-2 p-2">
+                                            <div class="col-lg-4 col-md-6 mb-3">
+                                                <div class="product">
+                                                    <div class="product-option">
+                                                        <select class="form-select custom-select"
+                                                            aria-label="Default select example">
+                                                            <option selected>Color</option>
+                                                            <option value="1">Black</option>
+                                                            <option value="2">Blue</option>
+                                                        </select>
+                                                        <select class="form-select custom-select"
+                                                            aria-label="Default select example">
+                                                            <option selected>Size</option>
+                                                            <option value="1">Small</option>
+                                                            <option value="2">Large</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="product-image">
+                                                        <!-- <a href="#" class="btn btn-ico btn-rounded btn-white"></a> -->
+                                                        <a href="#">
+                                                            <img src="img/product-1.jpg" alt="" class="img-fluid img">
+                                                            <img src="img/product-1-2.jpg" alt=""
+                                                                class="img-fluid img-2">
+                                                        </a>
+                                                    </div>
+                                                    <div class="product-meta">
+                                                        <h3 class="product-title"><a href="#">Fawn Wool / Natural
+                                                                Mammoth Chair</a>
+                                                        </h3>
+                                                        <div class="product-price">
+                                                            <span>$2268</span>
+                                                            <span class="product-action"><a href="#">Add To
+                                                                    Cart</a></span>
+                                                        </div>
+                                                        <a href="#" class="product-like"><i
+                                                                class="fa-solid fa-heart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-6 mb-3">
+                                                <div class="product">
+                                                    <div class="product-option">
+                                                        <select class="form-select custom-select"
+                                                            aria-label="Default select example">
+                                                            <option selected>Color</option>
+                                                            <option value="1">Black</option>
+                                                            <option value="2">Blue</option>
+                                                        </select>
+                                                        <select class="form-select custom-select"
+                                                            aria-label="Default select example">
+                                                            <option selected>Size</option>
+                                                            <option value="1">Small</option>
+                                                            <option value="2">Large</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="product-image">
+                                                        <!-- <a href="#" class="btn btn-ico btn-rounded btn-white"></a> -->
+                                                        <a href="#">
+                                                            <img src="img/product-2.jpg" alt="" class="img-fluid img">
+                                                            <img src="img/product-2-2.jpg" alt=""
+                                                                class="img-fluid img-2">
+                                                        </a>
+                                                    </div>
+                                                    <div class="product-meta">
+                                                        <h3 class="product-title"><a href="#">Dark Stained NY11 Dining
+                                                                Chair</a>
+                                                        </h3>
+                                                        <div class="product-price">
+                                                            <span>$504</span>
+                                                            <span class="product-action"><a href="#">Add To
+                                                                    Cart</a></span>
+                                                        </div>
+                                                        <a href="#" class="product-like"><i
+                                                                class="fa-solid fa-heart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-6 mb-3">
+                                                <div class="product">
+                                                    <div class="product-option">
+                                                        <select class="form-select custom-select"
+                                                            aria-label="Default select example">
+                                                            <option selected>Color</option>
+                                                            <option value="1">Black</option>
+                                                            <option value="2">Blue</option>
+                                                        </select>
+                                                        <select class="form-select custom-select"
+                                                            aria-label="Default select example">
+                                                            <option selected>Size</option>
+                                                            <option value="1">Small</option>
+                                                            <option value="2">Large</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="product-image">
+                                                        <!-- <a href="#" class="btn btn-ico btn-rounded btn-white"></a> -->
+                                                        <a href="#">
+                                                            <img src="img/product-3.jpg" alt="" class="img-fluid img">
+                                                            <img src="img/product-3-2.jpg" alt=""
+                                                                class="img-fluid img-2">
+                                                        </a>
+                                                    </div>
+                                                    <div class="product-meta">
+                                                        <h3 class="product-title"><a href="#">Black IC Pendant Light</a>
+                                                        </h3>
+                                                        <div class="product-price">
+                                                            <span>$410</span>
+                                                            <span class="product-action"><a href="#">Add To
+                                                                    Cart</a></span>
+                                                        </div>
+                                                        <a href="#" class="product-like"><i
+                                                                class="fa-solid fa-heart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="foot text-white">
+        <div class="container">
+            <div class="row over-h">
+                <div class="col-lg-6 mb-5">
+                    <div class="row ">
+                        <div class="col-md-8">
+                            <p>
+                                Thanks to
+                                <a href="#" class="underline">
+                                    Opumo
+                                </a>
+                                for the product images used in this demo theme. Head over to
+                                <a href="#" class="underline">
+                                    their store
+                                </a>
+                                to get these products.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10">
+                            <h4 class="eyebrow mb-3">Quick Links</h4>
+                            <ul class=" list-group list-group-columns">
+                                <li class="list-group-item"><a href="#">About</a> </li>
+
+                                <li class="list-group-item"><a href="#">Contact Us</a> </li>
+
+                                <li class="list-group-item"><a href="#">FAQ</a></li>
+
+                                <li class="list-group-item"><a href="#">Blog</a></li>
+
+                                <li class="list-group-item"><a href="#">Terms of Use</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ">
+                    <div class="row justify-content-end">
+                        <div class="col-lg-10">
+                            <h4 class="eyebrow mb-3">Subscribe</h4>
+                            <div class="input-group">
+                                <input type="text" class="form-control form-control-lg rounded-0" placeholder="Email">
+                                <button class="btn btn-sub btn-outline-secondary" type="button"
+                                    id="inputGroupFileAddon04">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-end">
+                        <div class="col-lg-10">
+                            <h4 class="eyebrow mb-3">Follow us</h4>
+                            <nav class="nav nav-icons">
+                                <a href="#" class="nav-link"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" class="nav-link"><i class="fa-brands fa-twitter"></i></i></a>
+                                <a href="#" class="nav-link"><i class="fa-brands fa-youtube"></i></a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
